@@ -5,5 +5,10 @@ def uadd(x, y):
 def usub(x, y):
     return x - y
 
+
 def umult(x, y):
     return x * y
+
+
+def udiv(x, y):
+    return x / y

@@ -1,4 +1,4 @@
-from uselessmath import uadd, usub, umult, udiv
+from uselessmath import uadd, udiv, umult, usub
 
 
 def test_uadd():

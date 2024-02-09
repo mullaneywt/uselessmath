@@ -1,4 +1,4 @@
-from uselessmath import usquare, ucube
+from uselessmath import ucube, usquare
 
 
 def test_usquare():

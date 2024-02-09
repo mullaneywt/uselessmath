@@ -1,14 +1,14 @@
-def uadd(x, y):
+def uadd(x: int, y: int) -> int:
     return x + y
 
 
-def usub(x, y):
+def usub(x: int, y: int) -> int:
     return x - y
 
 
-def umult(x, y):
+def umult(x: int, y: int) -> int:
     return x * y
 
 
-def udiv(x, y):
+def udiv(x: int, y: int) -> int:
     return x / y

@@ -1,11 +1,39 @@
 [project]
 name = "uselessmath"
 version = "0.0.2"
+authors=[
+  {name ="Will Mullaney",email="rdns-reaper@mullaneywt.anonaddy.com"}
+]
+description="Reverse DNS lookup engine"
+readme = "README.md"
+keywords=["useless", "math"]
+requires-python=">=3.11"
+#dependencies=["module_name>=0.1.0"]
+
+[project.urls]
+"Home Page" = "https://github.com/mullaneywt/uselessmath"
+"Bug Tracker" = "https://github.com/mullaneywt/uselessmath/issues"
+"Source" = "https://github.com/mullaneywt/uselessmath"
+"Documentation" = "https://uselessmath.readthedocs.io"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.hatch]
+packages = ["uselessmath"]
+
 
 [tool.hatch.build.targets.sdist]
-include = ["src"]
+exclude = [
+  "tests",
+  "/.github",
+  "/docs",
+  "tox.ini",
+  "build_requirements.txt"
+]
+#Pick include or exclude
+#include = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/uselessmath"]
